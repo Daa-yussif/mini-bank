@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Mini bank</h2>
+        <span>Welcome</span>
+      </div>
+
+      <nav>
+        <a class="active" href="Account.html">Back</a>
+        <a href="deposit.html">Deposit</a>
+        <a href="Transfer.html">Transfer</a>
+        <a href="loan.html">Loan    </a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main>
+        <header>
+        <h1>Apply for Loan</h1>
+        </header>
+        <section class="account">
+            <div>
+                <h3 class="accountName">username</h3>
+               
+            </div>
+
+            <div>
+                <p>Account Balance</p>
+                <h2 class="accountBalance">$0.00</h2>
+            </div>
+        </section>
+
+        <section class="loan">
+            
+            <div class="loan-text">
+                <h2>Need a Loan?</h2>
+                <p>Our loan services offer competitive rates and flexible terms to help you achieve your financial goals. <br> Apply now and take the first step towards securing your future!</p>
+            </div>
+
+
+            
+            <div>
+            <form class="loan-form">
+                <h2>Loan Application</h2>
+                <label for="loan-amount">Desired Loan Amount:</label><br>
+                <input type="number" id="loan-amount" name="loan-amount" required><br>
+                <label for="loan-term">Loan Term (months):</label><br>
+                <input type="number" id="loan-term" name="loan-term" required><br>
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency">
+                    <option value="CEDIS">CEDIS</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select><br>
+                <label for="purpose">Purpose of Loan:</label><br>
+                <input type="text" id="purpose" name="purpose" required><br>
+                <label for="payment-rate">Payment Rate:</label><br>
+                <input type="number" id="payment-rate" name="payment-rate" required><br>
+
+                <button type="submit" class="loan-submit-btn">Submit Application</button>
+            </form>
+
+            
+
+            </div>
+
+
+        </main>
+        <script src="script.js"></script>
+        </body>

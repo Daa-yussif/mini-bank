@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Mini bank</h2>
+        <span>Welcome</span>
+      </div>
+
+      <nav>
+        <a class="active" href="index.html">Back</a>
+        <a href="deposit.html">Deposit</a>
+        <a href="transfer.html">Transfer</a>
+        <a href="loan.html">Loan    </a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <main>
+        <section class="account">
+            <div>
+                <h3 class="accountName">username</h3>
+                
+            </div>
+
+            <div>
+                <p>Account Balance</p>
+                <h2 class="accountBalance" >$0.00</h2>
+            </div>
+        </section>
+
+        <section class="account-services">
+            <div class="account-card">
+                <img class="acc-img" src="/photos/Deposit.png" alt="">
+
+                <a href="deposit.html"><button  class="acc-btn">Deposit</button></a>
+            </div>
+            <div class="account-card">
+                <img class="acc-img" src="/photos/Transfer.png" alt="">
+                <a href="transfer.html"><button  class="acc-btn">Transfer</button></a>
+            </div>
+            <div class="account-card">
+                <img class="acc-img" src="/photos/Loan.png" alt="">
+                <button class="acc-btn">Loan</button>
+            </div>
+            <div class="upcoming-service">
+                <h2>More Services Coming Soon!</h2>
+                <p>
+                    We are constantly working to improve our services. Stay tuned for more exciting features!
+                </p>
+            </div>
+           
+            
+        </section>
+    </main>
+<script src="script.js"></script>
+    
+</body>
+</html>
